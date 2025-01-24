@@ -1,0 +1,48 @@
+{
+  "name": "dr-trace",
+  "displayName": "Dr Trace",
+  "author": "stevie732",
+  "description": "A VSCode extension to track time spent on a project.",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/stevie732/dr-trace.git"
+  },
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:timeTracker.start",
+    "onCommand:timeTracker.stop"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "timeTracker.start",
+        "title": "Start Time Tracking"
+      },
+      {
+        "command": "timeTracker.stop",
+        "title": "Stop Time Tracking"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.60.0",
+    "@typescript-eslint/eslint-plugin": "^4.28.1",
+    "@typescript-eslint/parser": "^4.28.1",
+    "eslint": "^7.29.0",
+    "typescript": "^4.3.5",
+    "vscode-test": "^1.4.0"
+  }
+}
