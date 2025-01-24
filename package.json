@@ -17,10 +17,6 @@
   "categories": [
     "Other"
   ],
-  "activationEvents": [
-    "onCommand:timeTracker.start",
-    "onCommand:timeTracker.stop"
-  ],
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
