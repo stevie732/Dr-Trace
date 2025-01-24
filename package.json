@@ -10,7 +10,7 @@
     "type": "git",
     "url": "https://github.com/stevie732/Dr-Trace.git"
   },
-  "publisher": "Stephen Prahl",
+  "publisher": "stevie732",
   "engines": {
     "vscode": "^1.60.0"
   },
